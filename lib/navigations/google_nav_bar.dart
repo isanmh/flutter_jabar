@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutterv3/dasar/root_page.dart';
 import 'package:flutterv3/pages/aboutpage.dart';
 import 'package:flutterv3/pages/homepage.dart';
 import 'package:flutterv3/pages/servicepage.dart';
 import 'package:flutterv3/pages/settingpage.dart';
+import 'package:flutterv3/slicing/chatty.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class GoogleNavBar extends StatefulWidget {
@@ -16,8 +18,10 @@ class _GoogleNavBarState extends State<GoogleNavBar> {
   int currentPage = 0;
 
   List<Widget> pages = [
-    const HomePage(),
-    const AboutPage(),
+    // const HomePage(),
+    const RootPage(),
+    // const AboutPage(),
+    const Chatty(),
     const ServicePage(),
     const SettingPage(),
   ];
