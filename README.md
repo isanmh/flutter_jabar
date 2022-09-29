@@ -1,6 +1,6 @@
 # flutterv3
 
-A new Flutter project.
+Bahan Pelatihan Flutter Pemerintahan Jawa Barat
 
 ## Getting Started
 
