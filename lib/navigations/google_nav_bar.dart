@@ -8,7 +8,7 @@ import 'package:flutterv3/slicing/chatty.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class GoogleNavBar extends StatefulWidget {
-  const GoogleNavBar({super.key});
+  const GoogleNavBar({Key? key}) : super(key: key);
 
   @override
   State<GoogleNavBar> createState() => _GoogleNavBarState();

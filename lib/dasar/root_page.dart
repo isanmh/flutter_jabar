@@ -1,7 +1,9 @@
 // stateful widget
 import 'package:flutter/material.dart';
-import 'package:flutterv3/dasar/home_page.dart';
+import 'package:flutterv3/dasar/menu_page.dart';
 import 'package:flutterv3/dasar/profile_page.dart';
+import 'package:flutterv3/pages/aboutpage.dart';
+import 'package:flutterv3/pages/homepage.dart';
 
 class RootPage extends StatefulWidget {
   const RootPage({Key? key}) : super(key: key);
@@ -16,7 +18,7 @@ class _RootPageState extends State<RootPage> {
 
   // list view
   List<Widget> pages = const [
-    HomePage(),
+    MenuPage(),
     ProfilePage(),
   ];
 
@@ -24,8 +26,54 @@ class _RootPageState extends State<RootPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: const Text('Flutter Training'),
       ),
+      drawer: Drawer(
+        child: Container(
+          color: Colors.deepPurple[200],
+          child: ListView(
+            children: [
+              DrawerHeader(
+                child: Center(
+                  child: Text(
+                    'L O G O',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                    ),
+                  ),
+                ),
+              ),
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text('Home'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.account_circle),
+                title: Text('About'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AboutPage(),
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+      endDrawer: Drawer(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint('Tombol Tekan !');
