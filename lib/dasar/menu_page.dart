@@ -33,6 +33,12 @@ class MenuPage extends StatelessWidget {
             },
             child: const Text('Bottom Navigation'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/webview');
+            },
+            child: const Text('Web View'),
+          ),
         ],
       ),
     );

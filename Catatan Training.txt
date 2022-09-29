@@ -1,0 +1,21 @@
+Cara membuat Web View :
+- buka pub.dev 
+- cari package webview_flutter
+- install package webview_flutter
+Setting build gradle :
+minSdkVersion in android/app/build.gradle
+- minSdkVersion 19
+src/main/AndroidManifest.xml
+    <application
+    android:label="flutterv3"
+    android:name="${applicationName}"
+    android:icon="@mipmap/ic_launcher"
+    android:usesCleartextTraffic="true"
+    >
+ios/Runner/Info.plist
+<!-- tambah ini untuk web view -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>

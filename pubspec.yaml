@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   # untuk dependency googl_nav_bar
   google_nav_bar: ^5.0.6
+  webview_flutter: ^3.0.4
 
 dev_dependencies:
   flutter_test:

@@ -5,6 +5,7 @@ import 'package:flutterv3/navigations/bottom_nav.dart';
 import 'package:flutterv3/navigations/google_nav_bar.dart';
 import 'package:flutterv3/pages/splash_page.dart';
 import 'package:flutterv3/slicing/chatty.dart';
+import 'package:flutterv3/webview/web_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/rootpage': (context) => const RootPage(),
         '/dasar': (context) => const DasarFlutter(),
         '/chatty': (context) => const Chatty(),
+        '/webview': (context) => const WebViewPage(),
       },
       // home: BottomNav(),
     );
