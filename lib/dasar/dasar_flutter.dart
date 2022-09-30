@@ -15,7 +15,14 @@ class _DasarFlutterState extends State<DasarFlutter> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Learn Flutter'),
+        title: const Text('L O G O'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        titleTextStyle: const TextStyle(
+          color: Colors.deepPurple,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
         // untuk menghilangkan leading
         automaticallyImplyLeading: false,
         // custom leading
@@ -25,6 +32,7 @@ class _DasarFlutterState extends State<DasarFlutter> {
             // Navigator.of(context).pop();
             Navigator.pop(context);
           },
+          color: Colors.deepPurple,
         ),
         actions: [
           IconButton(
@@ -32,10 +40,12 @@ class _DasarFlutterState extends State<DasarFlutter> {
             onPressed: () {
               debugPrint('Info');
             },
+            color: Colors.deepPurple,
           ),
         ],
       ),
-
+      // biar tembus appbar
+      extendBodyBehindAppBar: true,
       // body utuk isi halaman
       // Column, Row, Image
       body: SingleChildScrollView(

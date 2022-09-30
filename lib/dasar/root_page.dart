@@ -29,6 +29,7 @@ class _RootPageState extends State<RootPage> {
         backgroundColor: Colors.deepPurple,
         title: const Text('Flutter Training'),
       ),
+      // Drawer
       drawer: Drawer(
         child: Container(
           color: Colors.deepPurple[200],

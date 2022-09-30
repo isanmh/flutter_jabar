@@ -31,6 +31,12 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Navigation Bar'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
+      extendBodyBehindAppBar: true,
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) {
           setState(() {

@@ -20,6 +20,11 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Navigation Bar'),
+        backgroundColor: Colors.deepPurple,
+      ),
+      extendBodyBehindAppBar: true,
       bottomNavigationBar: ClipRRect(
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(30),

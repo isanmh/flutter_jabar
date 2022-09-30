@@ -1,3 +1,22 @@
+Cara intall Flutter :
+- Download Flutter SDK
+- Extract Flutter SDK
+- Pindahkan ke C:\src\flutter
+- Ketikkan perintah : setx PATH "%PATH%;C:\src\flutter\bin"
+- Install Extension Flutter & Dart 
+- Ketikkan perintah : flutter doctor
+- Ketikkan perintah : flutter create nama_project
+- Ketikkan perintah : flutter run
+- Ketikkan perintah : flutter build apk
+- Ketikkan perintah : flutter build ios
+- Ketikkan perintah : flutter build web
+- Ketikkan perintah : flutter build appbundle
+- Ketikkan perintah : flutter clean
+- Ketikkan perintah : flutter pub get
+- Ketikkan perintah : flutter pub upgrade
+- Ketikkan perintah : flutter packages get
+
+
 Cara membuat Web View :
 - buka pub.dev 
 - cari package webview_flutter
