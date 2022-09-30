@@ -6,6 +6,10 @@ import 'package:flutterv3/dasar/root_page.dart';
 import 'package:flutterv3/navigations/bottom_nav.dart';
 import 'package:flutterv3/navigations/google_nav_bar.dart';
 import 'package:flutterv3/navigations/nav_bar.dart';
+import 'package:flutterv3/pages/CallApiGlobal/album_api.dart';
+import 'package:flutterv3/pages/CallApiGlobal/album_page.dart';
+import 'package:flutterv3/pages/CallApiGlobal/post_page.dart';
+import 'package:flutterv3/pages/CallApiGlobal/slider_pages.dart';
 import 'package:flutterv3/pages/splash_page.dart';
 import 'package:flutterv3/slicing/chatty.dart';
 import 'package:flutterv3/webview/web_view.dart';
@@ -32,6 +36,11 @@ class MyApp extends StatelessWidget {
         '/webview': (context) => const WebViewPage(),
         '/cliprrect': (context) => const ClipRRectPage(),
         '/imagecliprect': (context) => const ImageclipRect(),
+        // service api
+        '/albumapi': (context) => const AlbumApi(),
+        '/albumpage': (context) => const AlbumPage(),
+        '/postpage': (context) => const PostPage(),
+        '/sliderpage': (context) => const SliderPage(),
       },
       // home: BottomNav(),
     );

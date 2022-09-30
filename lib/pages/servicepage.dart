@@ -6,11 +6,38 @@ class ServicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: const Center(
-          child: Text(
-            'Services Page',
-          ),
+      appBar: AppBar(
+        title: const Text('Service Page'),
+        backgroundColor: Colors.deepPurple,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/albumapi');
+              },
+              child: const Text('Service get API Global'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/albumpage');
+              },
+              child: const Text('Album Page'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/postpage');
+              },
+              child: const Text('Post Page (API Global)'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/sliderpage');
+              },
+              child: const Text('Slider Image Reqresin'),
+            ),
+          ],
         ),
       ),
     );

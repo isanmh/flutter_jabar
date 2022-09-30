@@ -1,4 +1,4 @@
-Cara intall Flutter :
+================Cara intall Flutter :
 - Download Flutter SDK
 - Extract Flutter SDK
 - Pindahkan ke C:\src\flutter
@@ -16,8 +16,7 @@ Cara intall Flutter :
 - Ketikkan perintah : flutter pub upgrade
 - Ketikkan perintah : flutter packages get
 
-
-Cara membuat Web View :
+===============Cara membuat Web View :
 - buka pub.dev 
 - cari package webview_flutter
 - install package webview_flutter
@@ -38,3 +37,20 @@ ios/Runner/Info.plist
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+
+================Cara Memanggil API :
+- buka pub.dev
+- cari package http
+- install package http
+flutter pub add http
+- optional : AndroidManifest
+src/main/AndroidManifest.xml
+    <uses-permission android:name="android.permission.INTERNET" />
+- alur : 
+  - model -> service -> view
+- dengan menggunakan package http & shared_preferences
+- model -> helper -> service -> view
+untuk store data dari API ke local storage:
+flutter pub add shared_preferences
+flutter pub add carousel_slider
+
