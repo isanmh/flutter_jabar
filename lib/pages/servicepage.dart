@@ -37,6 +37,12 @@ class ServicePage extends StatelessWidget {
               },
               child: const Text('Slider Image Reqresin'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/viewdata');
+              },
+              child: const Text('SQFlite CRUD'),
+            ),
           ],
         ),
       ),

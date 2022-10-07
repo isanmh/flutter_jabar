@@ -60,7 +60,7 @@ class _PostPageState extends State<PostPage> {
                     title: Text(_postList[index]['title']),
                     subtitle: Text(_postList[index]['body']),
                     leading: const Icon(
-                      Icons.newspaper,
+                      Icons.article_outlined,
                     ),
                   ),
                 );

@@ -10,6 +10,7 @@ import 'package:flutterv3/pages/CallApiGlobal/album_api.dart';
 import 'package:flutterv3/pages/CallApiGlobal/album_page.dart';
 import 'package:flutterv3/pages/CallApiGlobal/post_page.dart';
 import 'package:flutterv3/pages/CallApiGlobal/slider_pages.dart';
+import 'package:flutterv3/pages/crudsql/index_user.dart';
 import 'package:flutterv3/pages/splash_page.dart';
 import 'package:flutterv3/slicing/chatty.dart';
 import 'package:flutterv3/webview/web_view.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         '/albumpage': (context) => const AlbumPage(),
         '/postpage': (context) => const PostPage(),
         '/sliderpage': (context) => const SliderPage(),
+        '/viewdata': (context) => const IndexUser(),
       },
       // home: BottomNav(),
     );
